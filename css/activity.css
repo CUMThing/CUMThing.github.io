@@ -1,0 +1,173 @@
+          a{
+      color:black;
+    }
+    .navbar a:focus, .navbar a:hover{
+      color:white;
+    }
+    #button-left{
+      float: left;
+      margin-left: 1rem;
+    }
+    .navbar-brand{
+      margin-left: 6rem;
+
+    }
+    .navbar-default .navbar-nav>li>a:focus {
+    color: white;
+}
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+      background-color: #2aa094;
+    }
+    .navbar-default .navbar-toggle {
+      border-color: white;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+      background-color: white;
+    }
+    .navbar-default .navbar-brand {
+      color: white;
+    }
+    .navbar-default .navbar-nav>li>a {
+      color: white;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: white;}
+    .navbar{
+      background-color:#2AA094;
+    }
+      html{
+        font-size:62.5%;
+      }
+      .icon {
+         width: 1em; height: 1em;
+         vertical-align: -0.15em;
+         fill: currentColor;
+         overflow: hidden;
+      }
+      body{
+        background-color: #f8f8f8;
+        padding-bottom: 1.5rem;
+      }
+      .navbar{
+        margin-bottom: 0.1rem;
+		  background-color: #2aa094
+      }
+
+      /*  我的 article head  */
+      .row div.col-xs-4 img{
+        width: 8rem;
+        margin: 1rem 1rem;
+      }
+       .row div.col-xs-8 h5{
+        padding-top: 1rem;
+      }
+      .xiugai-btn{
+        color: #333;
+        background-color: #f5f5f5;
+        border-color: #3cfa12;
+
+        padding: 0rem 2rem;
+      }
+      .xiugai-btn-1{
+        color: #333;
+        background-color: #f5f5f5;
+        border-color: #3cfa12;
+
+        padding: 0rem 1rem;
+      }
+      .row div.col-xs-9 h5{
+        margin-left: 2rem;
+      }
+      .qianming{
+        margin-left: 3.4rem;
+        margin-bottom: 0.2rem;
+
+      }
+      .row{
+        background-color: white;
+      }
+      .iconword{
+
+        font-size:1rem;
+        line-height: 1rem;
+        margin-top: 2rem;
+      }
+      .svg_1{
+        float:left;
+        font-size:2rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+        .icon-v-center{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding-right: 0rem;
+      }
+
+      .qiaodao-btn{
+        margin-left: -3.5rem;
+        height: 2.4rem;
+        line-height: 1.2rem;
+        margin-top: 1rem;
+      }
+
+      .svg{
+        font-size: 5rem;
+      }
+
+      .ability{
+        margin-top: 0rem;
+      }
+
+      .svg-center{
+        text-align: center;
+
+       }
+      .row-svg{
+        margin-top:0.3rem;
+      }
+		.bgcolor{
+			background-color: #2aa094
+		}
+
+
+
+
+                 /*媒体查询*/
+
+        /*<=320px*/
+      @media screen and (max-width: 320px) {
+
+        html{
+          font-size:50%;
+        }
+         .navbar-brand {
+            margin-left: 4rem;
+        }
+      }
+        @media  screen and (min-width: 400px) {
+         .navbar-brand {
+              margin-left: 7.04chengjiuqingdan.htmlrem;
+          }
+
+        }
+        /*600px ~960px*/
+      @media screen and (min-width: 600px){
+        html{
+               font-size:100%;
+        }
+        .area{
+          height: 35rem;
+        }
+      }
+      @media screen and (min-width: 960px){
+         html{
+               font-size:120%;
+        }
+        .area{
+          height: 45rem;
+        }
+      }
+     </style>

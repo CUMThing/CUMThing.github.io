@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0042)flipin.html -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>CUMTing_周边_地址</title>
+    <link href="css/m_demo.css" rel="stylesheet" type="text/css">
+    <!--icon-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!--Framework-->
+    <script src="js/m_jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#form').ffform({ animation: 'flip', submitButton: '#submit', validationIndicator: '#validation', errorIndicator: '#error', successIndicator: '#success', 'fields': [{ 'id': 'name', required: true,requiredMsg:'Name is required', type: 'alpha', validate: true, msg: 'Invalid Name' }, { 'id': 'email', required: true,requiredMsg:'E-Mail is required', type: 'email', validate: true, msg: 'Invalid E-Mail Address' }, { 'id': 'phone', required: false, type: 'custom', validate: false, msg: 'Invalid Phone #' }, { 'id': 'message', required: false, type: 'text', validate: false, msg: ''}] });
+        });
+    </script>
+    <style type="text/css">
+        tr {
+            background-color: white;
+           }
+    </style>
+</head>
+<body>
+    <section id="getintouch" >
+        <div class="container" style="border-bottom: 0;">
+            <h1>
+                <span>填写收货地址</span>
+            </h1>
+        </div>
+        <div class="container">
+            <form class="contact" action="#" method="post" id="form">
+            <div class="row clearfix">
+                <div class="lbl">
+                    <label for="name">
+                        姓名
+                    </label>
+                </div>
+                <div class="ctrl">
+                    <input type="text" id="name" name="name" data-required="true" data-validation="text"
+                        data-msg="Invalid Name" placeholder="请填写收货人姓名">
+                </div>
+            </div>
+
+            <div class="row clearfix">
+                <div class="lbl">
+                    <label for="email" >
+                        电话号码
+                    </label>
+                </div>
+                <div class="ctrl">
+                    <input type="text" id="phone" name="phone" data-required="true" data-validation="custom"
+                        data-msg="Invalid Phone #" placeholder="请填写收货人电话号码">
+                </div>
+            </div>
+
+            <!-- <div class="row clearfix">
+                <div class="lbl" >
+                    <label for="subject"  id="address_1">
+                        地址信息
+                    </label>
+                </div>
+                <div class="ctrl">
+                    <div class="zzsc">
+            <select>
+                <option value="">城市</option>
+            
+                <optgroup label="广东省">
+                    <option value="深圳">深圳</option>
+                    <option value="广州">广州</option>
+                    <option value="珠海">珠海</option>
+                    <option value="惠州">惠州</option>
+                </optgroup>
+            
+                <optgroup label="湖南省">
+                    <option value="长沙">长沙</option>
+                    <option value="株洲">株洲</option>
+                    <option value="岳阳">岳阳</option>
+                    <option value="张家界">张家界</option>
+                </optgroup>
+            
+                <optgroup label="江西省">
+                    <option value="南昌">南昌</option>
+                    <option value="赣州">赣州</option>
+                    <option value="宜春">宜春</option>
+                    <option value="九江">九江</option>
+                </optgroup>
+            </select>
+            </div>
+            
+            <script src="js/jquery-1.11.3.min.js"></script>
+            <script src="js/jquery.combo.select.js"></script>
+            <script>
+            $(function() {
+                $('select').comboSelect()
+            });
+            </script>
+                </div>
+            </div> -->
+
+            <div class="row clearfix">
+                <div class="lbl">
+                    <label for="subject">
+                        详细地址</label>
+                </div>
+                <div class="ctrl">
+                    <input type="text" id="address_2" placeholder="请填写收货人详细地址">
+                </div>
+            </div>
+            
+            <div class="row  clearfix">
+                <div class="span10 offset2">
+                    <input type="button" id="btn_add" value="保存地址">
+                </div>
+            </div>
+            </div>
+
+            
+
+            </form>
+            </br></br>
+            <div style="padding: 30px;margin: 0 auto;background: #fff;border: 1px solid #ccc;width: 90%;height: 100%;margin: 0 auto;}">
+            <div class="management">
+            <h1>
+                <span>地址管理</span>
+            </h1>
+            </br>
+        </div>
+            <div class="row clearfix">
+                <table id="table_address" cellspacing="1" bgcolor="#ccc" style="width: 100%;text-align:center;">
+                    <tr bgcolor="white" style="font-weight: bold;">
+                        <td>姓名</td>
+                        <td>电话号码</td>
+                        <td>详细地址</td>
+                        <td>操作</td>
+                    </tr>
+                    <tr>
+                        <td>令狐冲</td>
+                        <td>12345678910</td>
+                        <td>江苏省徐州市中国矿业大学物流园</td>
+                        <td><a href="javascript:void(0);" onclick="delTr(this);">删除</a></td>
+                    </tr>
+                    <tr>
+                        <td>任我行</td>
+                        <td>12345678911</td>
+                        <td>江苏省徐州市中国矿业大学管理学院</td>
+                        <td><a href="javascript:void(0);" onclick="delTr(this);">删除</a></td>
+                    </tr>
+                    <tr>
+                        <td>岳不群</td>
+                        <td>12345678912</td>
+                        <td>江苏省徐州市中国矿业大学二食堂</td>
+                        <td><a href="javascript:void(0);" onclick="delTr(this);">删除</a></td>
+                    </tr>
+
+                </table>
+                </div>
+        </div>
+    </section>
+
+
+<script>
+    
+    /*添加*/
+    document.getElementById("btn_add").onclick = function(){
+        var name = document.getElementById("name").value;
+        var phone = document.getElementById("phone").value;
+        var address_2 = document.getElementById("address_2").value;
+        
+        var td_name = document.createElement("td");
+        var text_name = document.createTextNode(name);
+        td_name.appendChild(text_name);
+        var td_phone = document.createElement("td");
+        var text_phone = document.createTextNode(phone);
+        td_phone.appendChild(text_phone);
+        var td_address_2 = document.createElement("td");
+        var text_address_2 = document.createTextNode(address_2);
+        td_address_2.appendChild(text_address_2);
+
+        var td_a = document.createElement("td");
+        var ele_a = document.createElement("a");
+        ele_a.setAttribute("href","javascript:void(0);");
+        ele_a.setAttribute("onclick","delTr(this)");
+        var text_a = document.createTextNode("删除");
+        ele_a.appendChild(text_a);
+        td_a.appendChild(ele_a);
+
+        var tr = document.createElement("tr");
+
+        tr.appendChild(td_name);
+        tr.appendChild(td_phone);
+        tr.appendChild(td_address_2);
+        tr.appendChild(td_a);
+        
+        var table_address = document.getElementById("table_address")
+        table_address.appendChild(tr); 
+    }
+
+
+    //删除
+    function delTr(obj){
+        var table = obj.parentNode.parentNode.parentNode;
+        var tr = obj.parentNode.parentNode;
+
+        table.removeChild(tr);
+    }
+
+</script>
+
+
+</script>
+
+</body>
+</html>

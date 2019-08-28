@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="CUMThing">
+    <meta name="author" content="第三组">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" href="/eat.ico">
+    <title>CUMThing_登录</title>
+    <!-- Bootstrap 样式表 -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- 当前页面用到的自定义样式表 -->
+    <link href="css/login.css" rel="stylesheet">
+    <link rel="Shortcut icon" href="images/favicon.ico" type="images/x-icon">
+</head>
+
+<body class="text-center">
+<form class="form-signin">
+    <img class="mb-4" src="images/我是吃瓜群众.png" alt=""/>
+    <h1 class="h3 mb-3 font-weight-normal">CUMThing</h1>
+    <label for="user" class="sr-only">手机号</label>
+    <input type="text" v-model="userName" id="user" class="form-control" placeholder="手机号（仅支持中国大陆）" required autofocus/>
+    <label for="password" class="sr-only">密码</label>
+    <input type="password" v-model="password" id="password" class="form-control" placeholder="密码" required/>
+    <div v-if="hasError" class="alert alert-danger" role="alert">
+        {{ errorMessage }}
+    </div>
+
+   <button>
+   <a href="CUMThing.html" id="denglu">登 录</a>
+   </button>
+
+    <div class="row pb-3">
+        <div class="col text-center">
+            <a href="#"><span class="once">立即注册</span></a>
+        </div>
+        <div class="col text-center">
+            <a href="#"><span class="forget">忘记密码</span></a>
+        </div>
+    </div>
+
+    <div class="row text-muted">
+        <span class="col px-0">—————</span>
+        <span class="col">使用第三方账号登录</span>
+        <span class="col px-0">—————</span>
+    </div>
+    <div>
+        <a href="register.html"></a>
+    </div>
+
+    <p class="fixed-bottom text-muted">&copy; 2019 电子商务系项目制第三组</p>
+</form>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/qwest.min.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

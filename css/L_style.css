@@ -1,0 +1,46 @@
+.zhuti{
+	background-color: #fcf8e3;
+}
+#submit{
+	background-color: #fcf8e3;
+}
+.box{
+    text-align:center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width:700px;
+    padding: 100px;
+    background: rgba(ff,ff,ff,);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+.baoming{
+    text-align: center;
+    margin: auto;
+    padding: 50px;
+}
+.input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom:30px;
+    border: none;
+    border-bottom:1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+#tip{
+    padding: 30px;
+}
+#apply{
+    font-size: 30px;
+    border-style: solid 1px;
+}
+#denglu{
+    color: #fff;
+}

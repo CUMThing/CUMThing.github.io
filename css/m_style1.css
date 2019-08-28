@@ -1,0 +1,21 @@
+/*--详细资料--*/
+p , label{
+	font-weight: 700;
+	color: black;
+	padding-right: 30px;
+}
+#btn_save {
+	width: 70px;
+	height: 30px;
+	border: none;
+	background-color: #01edc9;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+.main {
+	width: 150px;
+	margin-left: auto;
+   	margin-right: auto;
+}
